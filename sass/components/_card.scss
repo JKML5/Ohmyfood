@@ -1,0 +1,34 @@
+.cards {
+     .card {
+        background-color: $background-color-primary;
+        box-shadow: 0 5px 15px $shadow-color-card;
+        border-radius: 15px;
+        margin-bottom: 20px;
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+        }
+
+        &__thumbnail {
+            object-fit: cover;
+            width: 100%;
+            height: 175px;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        &__container {
+            font-size: 17px;
+
+            h2 {
+                font-weight: 500;
+            }
+
+            p {
+                font-weight: 300;
+            }
+        }
+        
+    }
+}
