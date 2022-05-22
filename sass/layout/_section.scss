@@ -5,4 +5,46 @@
     &--grey {
         background-color: $background-color-secondary;
     }
+
+    /* Home - Présentation */
+    &__presentation {
+        text-align: center;
+    }
+
+    /* Home - Fonctionnement */
+    &__operation {
+        font-size: $font-size-secondary;
+
+        .cards {
+            padding-left: 12px;
+        }
+
+        .card {
+            height: 75px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+
+            &__rank {
+                color: $color-secondary;
+                background-color: $background-color-tertiary;
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+                text-align: center;
+                text-decoration: none;
+                line-height: 1.9;
+                position: relative;
+                left: -12px;
+                border-radius: 50%;
+            }
+
+            &__icon {
+                font-size: 20px;
+                color: $color-tertiary;
+                margin: 0 25px 0 10px;
+            }
+
+        }
+    }
 }

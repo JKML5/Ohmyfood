@@ -1,0 +1,13 @@
+.button {
+    color: $color-secondary;
+    font-size: $font-size-secondary;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+    background: $background-color-tertiary;
+    background: linear-gradient(to bottom right, $background-color-button-secondary, $background-color-tertiary);
+    box-shadow: 0 5px 15px $color-quaternary;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}

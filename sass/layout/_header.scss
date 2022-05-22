@@ -5,14 +5,15 @@
         padding: 20px 0 10px 0;
 
         img {
-            width: 50%;
+            width: 45%;
         }
     }
 
     &__localization {
+        font-size: $font-size-secondary;
         background-color: $background-color-localization;
         padding: 15px 0;
-        box-shadow: inset 0 8px 5px -10px $shadow-color-localization;
+        box-shadow: inset 0 8px 5px -10px $color-tertiary;
 
         .fa-location-dot {
             margin-right: 10px;

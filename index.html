@@ -7,10 +7,10 @@
     <title>Ohmyfood!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/0548668964.js" crossorigin="anonymous"></script>
     <link href="./public/css/reset.css" rel="stylesheet">
-    <link href="./public/css/style.css" rel="stylesheet">
+    <link href="./public/css/main.css" rel="stylesheet">
 </head>
 </head>
 <body>
@@ -27,26 +27,40 @@
     </header>
 
     <main>
-        <section class="section section--grey">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <section class="section section__presentation section--grey">
+            <h1>Réservez le menu qui <br>vous convient</h1>
+            <p>Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.</p>
 
-            <button>Explorer nos restaurants</button>
+            <button class="button">Explorer nos restaurants</button>
         </section>
 
-        <section class="section">
+        <section class="section section__operation">
             <h1>Fonctionnement</h1>
 
-            <div class="card">
-                Choisissez un restaurant
-            </div>
+            <div class="cards">
+                <a href="#">
+                    <div class="card card--grey">
+                        <div class="card__rank">1</div>
+                        <i class="card__icon fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant
+                    </div>
+                </a>
 
-            <div class="card">
-                Composez votre menu
-            </div>
+                <a href="#">
+                    <div class="card card--grey">
+                        <div class="card__rank">2</div>
+                        <i class="card__icon fa-solid fa-list-ul"></i>
+                        Composez votre menu
+                    </div>
+                </a>
 
-            <div class="card">
-                Dégustez un restaurant
+                <a href="#">
+                    <div class="card card--grey">
+                        <div class="card__rank">3</div>
+                        <i class="card__icon fa-solid fa-store"></i>
+                        Dégustez un restaurant
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -55,49 +69,62 @@
 
             <div class="cards">
                 
-                <div class="card">
-                    <a href="#">
+                <a href="#">
+                    <div class="card">
                         <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo La palette du goût" class="card__thumbnail" />
                         <div class="card__container">
-                            <h2>La palette du goût</h2>
-                            <p>Ménilmontant</p>
+                            <div class="card__heading">
+                                <h2>La palette du goût</h2>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <i class="card__icon fa-regular fa-heart"></i>
                         </div>
-                    </a>
-                </div>
-                <!-- /.card -->
+                    </div>
+                    <!-- /.card -->
+                </a>
 
-                <div class="card">
-                    <a href="#">
+                <a href="#">
+                    <div class="card">
                         <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo La Note enchantée" class="card__thumbnail" />
                         <div class="card__container">
-                            <h2>La Note enchantée</h2>
-                            <p>Charonne</p>
+                            <div class="card__heading">
+                                <h2>La Note enchantée</h2>
+                                <p>Charonne</p>
+                            </div>
+                            <i class="card__icon fa-regular fa-heart"></i>
                         </div>
-                    </a>
-                </div>
-                <!-- /.card -->
+                    </div>
+                    <!-- /.card -->
+                </a>
 
-                <div class="card">
-                    <a href="#">
+                <a href="#">
+                    <div class="card">
                         <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo À la française" class="card__thumbnail" />
                         <div class="card__container">
-                            <h2>À la française</h2>
-                            <p>Cité Rouge</p>
+                            <div class="card__heading">
+                                <h2>À la française</h2>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <i class="card__icon fa-regular fa-heart"></i>
                         </div>
-                    </a>
-                </div>
-                <!-- /.card -->
+                    </div>
+                    <!-- /.card -->
+                </a>
 
-                <div class="card">
-                    <a href="#">
+                <a href="#">
+                    <div class="card">
                         <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo Le délice des sens" class="card__thumbnail" />
                         <div class="card__container">
-                            <h2>Le délice des sens</h2>
-                            <p>Folie-Méricourt</p>
+                            <div class="card__heading">
+                                <h2>Le délice des sens</h2>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <i class="card__icon fa-regular fa-heart"></i>
                         </div>
-                    </a>
-                </div>
-                <!-- /.card -->
+                    </div>
+                    <!-- /.card -->
+                </a>
+
 
             </div>
             <!-- /.cards -->
