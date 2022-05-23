@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Icones + ombre localisation*/
 /* Ombres */
 * {
@@ -70,7 +69,6 @@ a {
 .section {
   padding: 50px 20px;
   background-color: #FFFFFF;
-  /* Home - Présentation */
   /* Home - Fonctionnement */
 }
 
@@ -78,7 +76,7 @@ a {
   background-color: #F6F6F6;
 }
 
-.section__presentation {
+.section--align-center {
   text-align: center;
 }
 
@@ -115,6 +113,76 @@ a {
   font-size: 20px;
   color: #7E7E7E;
   margin: 0 25px 0 10px;
+}
+
+.restaurant__img {
+  object-fit: cover;
+  width: 100%;
+  height: 260px;
+}
+
+.restaurant .section {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  position: relative;
+  top: -50px;
+  padding-top: 30px;
+}
+
+.restaurant__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant__heading__title {
+  font-family: 'Shrikhand', cursive;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.restaurant__heading__fav {
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.restaurant__category__heading {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+
+.restaurant hr {
+  background-color: #99E2D0;
+  border: none;
+  width: 40px;
+  height: 3px;
+  float: left;
+  margin-bottom: 14px;
+}
+
+.restaurant .cards {
+  clear: both;
+}
+
+.restaurant .card {
+  padding: 15px 10px;
+}
+
+.restaurant .card__heading {
+  margin-bottom: 5px;
+}
+
+.restaurant .card__subheading {
+  font-size: 15px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant .card__price {
+  font-weight: 500;
 }
 
 .footer {
