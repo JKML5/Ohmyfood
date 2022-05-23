@@ -96,6 +96,35 @@ a {
   margin: 0 25px 0 10px;
 }
 
+.footer {
+  font-size: 16px;
+  background-color: #353535;
+  padding: 30px 25px;
+}
+
+.footer__logo img {
+  width: 32%;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  margin-bottom: 10px;
+}
+
+.footer__logo a {
+  color: #FFFFFF;
+}
+
+.footer__logo a:hover {
+  text-decoration: underline;
+}
+
+.footer__icon {
+  margin-right: 5px;
+}
+
+.footer__li {
+  margin: 12px 0;
+}
+
 .card {
   background-color: #FFFFFF;
   box-shadow: 0 5px 15px #CCCCCC;

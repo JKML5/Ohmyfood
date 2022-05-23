@@ -1,0 +1,31 @@
+.footer {
+    font-size: $font-size-secondary;
+    background-color: $background-color-footer;
+    padding: 30px 25px;
+
+    &__logo {
+        img {
+            width: 32%;
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: $color-secondary;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__icon {
+        margin-right: 5px;
+    }
+
+    &__li {
+        margin: 12px 0;
+    }
+
+}
