@@ -1,16 +1,22 @@
 .header {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     &__logo {
+        height: 65px;
         padding: 20px 0 10px 0;
 
         img {
-            width: 45%;
+            width: 100%;
         }
     }
 
     &__localization {
+        width: 100%;
         font-size: $font-size-secondary;
+        text-align: center;
         background-color: $background-color-localization;
         padding: 15px 0;
         box-shadow: inset 0 8px 5px -10px $color-tertiary;
@@ -18,5 +24,11 @@
         .fa-location-dot {
             margin-right: 10px;
         }
+    }
+
+    &__previous-link {
+        font-size: 22px;
+        position: absolute;
+        left: 20px;
     }
 }
