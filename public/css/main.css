@@ -153,4 +153,18 @@ a {
   cursor: pointer;
   margin-top: 30px;
 }
+
+.badge {
+  padding: 9px 12px;
+  margin: 13px 13px 0 0;
+  position: absolute;
+  right: 20px;
+  /* Largeur du padding de .card */
+  font-size: 14px;
+}
+
+.badge--new {
+  background: #99E2D0;
+  color: #008766;
+}
 /*# sourceMappingURL=main.css.map */
