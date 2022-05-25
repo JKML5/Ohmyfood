@@ -2,12 +2,19 @@
     padding: 50px 20px;
     background-color: $background-color-primary;
 
-    &--grey {
-        background-color: $background-color-secondary;
+    &__title {
+        margin-bottom: 20px;
     }
 
-    &--align-center {
-        text-align: center;
+    &--reservez {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .section__title {
+            margin: 0;
+        }
     }
 
     /* Home - Fonctionnement */
@@ -45,5 +52,17 @@
             }
 
         }
+    }
+
+    &--grey {
+        background-color: $background-color-secondary;
+    }
+
+    &--align-center {
+        text-align: center;
+    }
+
+    &--no-padding-top {
+        padding-top: 0;
     }
 }

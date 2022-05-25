@@ -1,11 +1,12 @@
 .footer {
     font-size: $font-size-secondary;
+    font-weight: 300;
     background-color: $background-color-footer;
     padding: 30px 25px;
 
     &__logo {
         img {
-            width: 32%;
+            width: 30%;
             filter: invert(100%);
             -webkit-filter: invert(100%);
             margin-bottom: 10px;
@@ -22,10 +23,10 @@
 
     &__icon {
         margin-right: 5px;
+        font-size: 14px;
     }
 
     &__li {
         margin: 12px 0;
     }
-
 }
