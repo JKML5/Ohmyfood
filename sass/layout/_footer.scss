@@ -1,8 +1,16 @@
 .footer {
-    font-size: $font-size-secondary;
-    font-weight: 300;
     background-color: $background-color-footer;
     padding: 30px 25px;
+    
+    &__content {
+        font-size: $font-size-secondary;
+        font-weight: 300;
+
+        @media screen and (min-width: 992px) {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+    }
 
     &__logo {
         img {
@@ -10,15 +18,20 @@
             filter: invert(100%);
             -webkit-filter: invert(100%);
             margin-bottom: 10px;
-        }
 
-        a {
-            color: $color-secondary;
+            @media screen and (min-width: 768px) {
+                width: auto;
+                max-height: 50px;
+            }   
         }
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a {
+        color: $color-secondary;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 
     &__icon {
@@ -29,4 +42,5 @@
     &__li {
         margin: 12px 0;
     }
+
 }

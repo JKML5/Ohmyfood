@@ -30,6 +30,10 @@ a {
   color: #000000;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -46,6 +50,13 @@ a {
   width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .header__logo {
+    height: 105px;
+    padding: 40px 0 30px 0;
+  }
+}
+
 .header__localization {
   width: 100%;
   font-size: 16px;
@@ -59,6 +70,17 @@ a {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 992px) {
+  .header__localization {
+    width: auto;
+    box-shadow: none;
+    margin-left: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+}
+
 .header__previous-link {
   font-size: 22px;
   position: absolute;
@@ -69,6 +91,7 @@ a {
   padding: 50px 20px;
   background-color: #FFFFFF;
   /* Home - Fonctionnement */
+  /* Home - Restaurants */
 }
 
 .section__title {
@@ -121,6 +144,50 @@ a {
   margin: 0 25px 0 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .section__operation .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__operation .cards .card {
+    width: 31%;
+  }
+  .section__operation .cards .card__icon {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section__operation {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+.section__restaurant .cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .section__restaurant .cards {
+    flex-direction: row;
+  }
+  .section__restaurant .cards .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section__restaurant {
+    max-width: 1024px;
+    border-radius: 20px;
+    margin: 0 auto 50px auto;
+  }
+}
+
 .section--grey {
   background-color: #F6F6F6;
 }
@@ -133,10 +200,25 @@ a {
   padding-top: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 30px 20px;
+  }
+  .section--reservez {
+    height: 220px;
+  }
+}
+
 .restaurant__img {
   object-fit: cover;
   width: 100%;
   height: 260px;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant__img {
+    height: 500px;
+  }
 }
 
 .restaurant .section {
@@ -145,6 +227,16 @@ a {
   position: relative;
   margin-top: -50px;
   padding-top: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant .section {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    top: -100px;
+    border-radius: 35px;
+  }
 }
 
 .restaurant__heading {
@@ -182,6 +274,16 @@ a {
 
 .restaurant .cards {
   clear: both;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant .cards {
+    flex-direction: row;
+  }
 }
 
 .restaurant .card {
@@ -203,11 +305,27 @@ a {
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurant .card {
+    width: calc(50% - 10px);
+  }
+}
+
 .footer {
-  font-size: 16px;
-  font-weight: 300;
   background-color: #353535;
   padding: 30px 25px;
+}
+
+.footer__content {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 992px) {
+  .footer__content {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 .footer__logo img {
@@ -217,11 +335,18 @@ a {
   margin-bottom: 10px;
 }
 
-.footer__logo a {
+@media screen and (min-width: 768px) {
+  .footer__logo img {
+    width: auto;
+    max-height: 50px;
+  }
+}
+
+.footer a {
   color: #FFFFFF;
 }
 
-.footer__logo a:hover {
+.footer a:hover {
   text-decoration: underline;
 }
 
@@ -278,6 +403,10 @@ a {
   background-color: #F6F6F6;
 }
 
+.card--relative {
+  position: relative;
+}
+
 .button {
   width: max-content;
   color: #FFFFFF;
@@ -289,6 +418,7 @@ a {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 0 5px 15px #CCCCCC;
   padding: 15px 20px;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -296,9 +426,8 @@ a {
   padding: 9px 12px;
   margin: 13px 13px 0 0;
   position: absolute;
-  right: 20px;
-  /* Largeur du padding de .card */
   font-size: 14px;
+  right: 0;
 }
 
 .badge--new {

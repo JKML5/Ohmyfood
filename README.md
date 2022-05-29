@@ -10,4 +10,4 @@ Projet 3 : Dynamisez une page web avec des animations CSS
 Jean-Kamal Mougammadou
 
 ## Accès
-[https://jkml5.github.io/Booki/](https://jkml5.github.io/Ohmyfood/)
+[https://jkml5.github.io/Ohmyfood/](https://jkml5.github.io/Ohmyfood/)

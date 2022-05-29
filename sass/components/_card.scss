@@ -40,4 +40,8 @@
     &--grey {
         background-color: $background-color-secondary;
     }
+
+    &--relative {
+        position: relative;
+    }
 }
