@@ -1,8 +1,14 @@
 .card {
     background-color: $background-color-primary;
-    box-shadow: 0 5px 15px $color-quaternary;
+    box-shadow: 0 0 15px $shadow-color;
     border-radius: 15px;
     margin-bottom: 20px;
+    transition: box-shadow 400ms;
+
+
+    &:hover {
+        box-shadow: 0 0 20px $shadow-color-hover;
+    }
 
     a {
         text-decoration: none;
@@ -35,6 +41,19 @@
 
     &__icon {
         font-size: 24px;
+
+        &--like {
+            color: $color-secondary;
+            text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+            transition: all 200ms; 
+            &:hover {
+                text-shadow: unset;
+                background: linear-gradient(to bottom right, $background-color-button-secondary, $background-color-tertiary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
     }
 
     &--grey {

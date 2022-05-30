@@ -7,8 +7,13 @@
     border-radius: 50px;
     background: $background-color-tertiary;
     background: linear-gradient(to bottom right, $background-color-button-secondary, $background-color-tertiary);
-    box-shadow: 0 5px 15px $color-quaternary;
+    box-shadow: 0 0 15px $shadow-color;
     padding: 15px 20px;
     margin: 0 auto;
     cursor: pointer;
+    transition: all 400ms;
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 0 20px $shadow-color-hover;
+    }
 }

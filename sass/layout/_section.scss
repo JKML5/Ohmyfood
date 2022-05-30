@@ -50,6 +50,14 @@
                 color: $color-tertiary;
                 margin: 0 25px 0 10px;
             }
+
+            &--selected {
+                background-color: $background-color-card-selected;
+
+                .card__icon {
+                    color: $background-color-tertiary;
+                }
+            }
         }
 
         @media screen and (min-width: 768px) {

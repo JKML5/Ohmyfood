@@ -1,5 +1,6 @@
 /* Icones + ombre localisation*/
 /* Ombres */
+/* Ombres */
 * {
   box-sizing: border-box;
   /* Opera/IE 8+ */
@@ -142,6 +143,14 @@ a {
   font-size: 20px;
   color: #7E7E7E;
   margin: 0 25px 0 10px;
+}
+
+.section__operation .card--selected {
+  background-color: #f5edff;
+}
+
+.section__operation .card--selected .card__icon {
+  color: #9356DC;
 }
 
 @media screen and (min-width: 768px) {
@@ -288,6 +297,7 @@ a {
 
 .restaurant .card {
   padding: 15px 10px;
+  cursor: pointer;
 }
 
 .restaurant .card__heading {
@@ -361,9 +371,14 @@ a {
 
 .card {
   background-color: #FFFFFF;
-  box-shadow: 0 5px 15px #CCCCCC;
+  box-shadow: 0 0 15px #BBBBBB;
   border-radius: 15px;
   margin-bottom: 20px;
+  transition: box-shadow 400ms;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #777777;
 }
 
 .card a {
@@ -399,6 +414,19 @@ a {
   font-size: 24px;
 }
 
+.card__icon--like {
+  color: #FFFFFF;
+  text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+  transition: all 200ms;
+}
+
+.card__icon--like:hover {
+  text-shadow: unset;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .card--grey {
   background-color: #F6F6F6;
 }
@@ -416,10 +444,16 @@ a {
   border-radius: 50px;
   background: #9356DC;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  box-shadow: 0 5px 15px #CCCCCC;
+  box-shadow: 0 0 15px #BBBBBB;
   padding: 15px 20px;
   margin: 0 auto;
   cursor: pointer;
+  transition: all 400ms;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px #777777;
 }
 
 .badge {
