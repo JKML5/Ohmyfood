@@ -72,49 +72,92 @@
     }
 
     .card {
+        opacity: 0;
         cursor: pointer;
         display: flex;
         justify-content: space-between;
-        
-        &__content {
-            width: 100%;
-            padding: 15px 10px;
-    
-            &:hover + .card__check {
-                display: flex;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+        // Affichage des cartes espacés de 200ms
+        $delay : 0;
+        @for $i from 1 through 3 {
+            $delay : $delay + 200;
+
+            &:nth-child(#{$i}) {
+                animation-delay: $delay + ms;
             }
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                transform: translate(0, 20px);
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 15px 10px;
+            width: 100%;
+            white-space: nowrap;
         }
         
         &__heading {
             margin-bottom: 5px;
+            padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
         &__subheading {
             font-size: 15px;
             font-weight: 300;
-            display: flex;
             justify-content: space-between;
 
+            padding-right: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         
 
         &__price {
+            font-size: 15px;
             font-weight: 500;
         }
 
         &__check {
             width: 60px;
-            display: none;
+            height: 100%;
+            display: flex;
             justify-content: center;
             align-items: center;
             background-color: $background-color-badge-new;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
             color: white;
+            position: absolute;
+            right: -60px;
+
+            transition: transform 330ms ease-in-out;
 
             &__icon {
                 font-size: 22px;
             }
+        }
+
+        &:hover > .card__check {
+            transform: translate(-60px, 0);
+        }
+        &:hover > .card__content {
+            width: calc(100% - 60px);
         }
 
         @media screen and (min-width: 768px) {
