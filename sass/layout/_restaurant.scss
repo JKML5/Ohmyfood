@@ -72,9 +72,19 @@
     }
 
     .card {
-        padding: 15px 10px;
         cursor: pointer;
-
+        display: flex;
+        justify-content: space-between;
+        
+        &__content {
+            width: 100%;
+            padding: 15px 10px;
+    
+            &:hover + .card__check {
+                display: flex;
+            }
+        }
+        
         &__heading {
             margin-bottom: 5px;
         }
@@ -84,10 +94,27 @@
             font-weight: 300;
             display: flex;
             justify-content: space-between;
+
         }
+        
 
         &__price {
             font-weight: 500;
+        }
+
+        &__check {
+            width: 60px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background-color: $background-color-badge-new;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            color: white;
+
+            &__icon {
+                font-size: 22px;
+            }
         }
 
         @media screen and (min-width: 768px) {

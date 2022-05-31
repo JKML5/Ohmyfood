@@ -296,8 +296,18 @@ a {
 }
 
 .restaurant .card {
-  padding: 15px 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant .card__content {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+.restaurant .card__content:hover + .card__check {
+  display: flex;
 }
 
 .restaurant .card__heading {
@@ -313,6 +323,21 @@ a {
 
 .restaurant .card__price {
   font-weight: 500;
+}
+
+.restaurant .card__check {
+  width: 60px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+}
+
+.restaurant .card__check__icon {
+  font-size: 22px;
 }
 
 @media screen and (min-width: 768px) {
