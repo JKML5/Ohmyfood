@@ -1,19 +1,17 @@
 .button {
-    width: max-content;
-    color: $color-secondary;
+    color: $color-white;
     font-size: $font-size-secondary;
-    font-weight: 500;
     border: none;
     border-radius: 50px;
-    background: $background-color-tertiary;
-    background: linear-gradient(to bottom right, $background-color-button-secondary, $background-color-tertiary);
-    box-shadow: 0 0 15px $shadow-color;
-    padding: 15px 20px;
-    margin: 0 auto;
+    @include background-linear-gradient;
+    @include box-shadow;
     cursor: pointer;
+    margin: 0 auto;
+    padding: 15px 20px;
     transition: all 400ms;
+
     &:hover {
         filter: brightness(1.1);
-        box-shadow: 0 0 20px $shadow-color-hover;
+        @include box-shadow-hover;
     }
 }

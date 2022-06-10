@@ -1,11 +1,12 @@
 .badge {
-    padding: 9px 12px;
-    margin: 13px 13px 0 0;
+    font-size: $font-size-tertiary;
     position: absolute;
-    font-size: 14px;
     right: 0;
+    margin: 13px 13px 0 0;
+    padding: 9px 12px;
+
     &--new {
-        background: $background-color-badge-new;
-        color: $color-badge-new;
+        background: $color-tertiary;
+        color: $color-tertiary-font;
     }
 }

@@ -1,24 +1,23 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: $font-size-primary;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-p {
-    font-weight: 300;
+    font-weight: $font-weight-medium;
     line-height: 1.2;
 }
 
 a {
     text-decoration: none;
-    color: $color-primary;
+    color: $color-black;
+
+    &.url-block {
+        display: block;
+    }
 }
 
 .align-center {
     text-align: center;
+}
+
+.mb20 {
+    margin-bottom: 20px;
 }

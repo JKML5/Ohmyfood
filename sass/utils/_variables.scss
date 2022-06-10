@@ -1,22 +1,26 @@
-$color-primary: #000000;
-$color-secondary: #FFFFFF;
-$color-tertiary: #7E7E7E;   /* Icones + ombre localisation*/
-$color-quaternary: #CCCCCC; /* Ombres */
-$color-badge-new: #008766;
+$color-primary:          #9356DC;
+$color-primary-selected: #f5edff;
+$color-secondary:        #FF79DA;
+$color-tertiary:         #99E2D0;
+$color-tertiary-font:    #008766;
+$color-black:            #000000;
+$color-white:            #FFFFFF;
+$color-footer:           #353535;
+$color-grey:             #F6F6F6;
+$color-grey-dark:        #777777;
+$color-grey-light:       #BBBBBB;
+$color-localization:     #EAEAEA;
 
+$font-size-primary:        18px;
+$font-size-secondary:      16px;
+$font-size-tertiary:       14px;
+$font-size-title:          28px; // H1
+$font-size-heart-icon:     24px; // icône coeur
+$font-size-check-icon:     22px; // icône check
+$font-size-operation-icon: 20px; // icônes bloc "Fonctionnement"
+$font-size-spinner:        30px; // Icône loading spinner
+$font-size-previous-link:  22px; // Bouton retour Home
 
-$background-color-primary: #FFFFFF;
-$background-color-secondary: #F6F6F6;
-$background-color-tertiary: #9356DC;
-$background-color-button-secondary: #FF79DA;
-$background-color-localization: #EAEAEA;
-$background-color-badge-new: #99E2D0;
-$background-color-footer: #353535;
-$background-color-card-selected : #f5edff;
-
-$shadow-color: #BBBBBB; /* Ombres */
-$shadow-color-hover: #777777;
-
-
-$font-size-primary: 18px;
-$font-size-secondary: 16px;
+$font-weight-light:  300;
+$font-weight-medium: 500;
+$font-weight-bold:   700;

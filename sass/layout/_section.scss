@@ -1,26 +1,15 @@
 .section {
     padding: 50px 20px;
-    background-color: $background-color-primary;
+    background-color: $color-white;
 
     &__title {
+        font-size: $font-size-title;
+        font-weight: $font-weight-bold;
         margin-bottom: 20px;
-    }
-
-    &--reservez {
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .section__title {
-            margin: 0;
-        }
     }
 
     /* Home - Fonctionnement */
     &__operation {
-        font-size: $font-size-secondary;
-
         .cards {
             padding-left: 12px;
         }
@@ -30,13 +19,14 @@
             display: flex;
             align-items: center;
             border-radius: 20px;
+            font-size: $font-size-secondary;
 
             &__rank {
-                color: $color-secondary;
-                background-color: $background-color-tertiary;
+                color: $color-white;
+                background-color: $color-primary;
                 width: 25px;
                 height: 25px;
-                font-size: 14px;
+                font-size: $font-size-tertiary;
                 text-align: center;
                 text-decoration: none;
                 line-height: 1.9;
@@ -45,28 +35,28 @@
                 border-radius: 50%;
             }
 
-            &__icon {
-                font-size: 20px;
-                color: $color-tertiary;
+            &__icon { /* Fonctionnement */
+                font-size: $font-size-operation-icon;
+                color: $color-grey-dark;
                 margin: 0 25px 0 10px;
             }
 
             &--selected {
-                background-color: $background-color-card-selected;
+                background-color: $color-primary-selected;
 
                 .card__icon {
-                    color: $background-color-tertiary;
+                    color: $color-primary;
                 }
             }
         }
 
-        @media screen and (min-width: 768px) {
+        @include tablet {
             .cards {
                 display: flex;
                 justify-content: space-between;
     
                 .card {
-                    width: 31%;
+                    width: calc(100%/3 - 20px);
                     &__icon {
                         margin: 0 10px 0 0;
                     }
@@ -74,10 +64,7 @@
             }
         }
 
-        @media screen and (min-width: 992px) {
-            max-width: 1024px;
-            margin: 0 auto;
-        }
+        @include desktop-max-width;
     }
 
     /* Home - Restaurants */
@@ -98,15 +85,16 @@
 
         }
 
-        @media screen and (min-width: 992px) {
-            max-width: 1024px;
+        @include desktop-max-width;
+
+        @include desktop {
             border-radius: 20px;
-            margin: 0 auto 50px auto;
+            margin-bottom: 50px
         }
     }
 
     &--grey {
-        background-color: $background-color-secondary;
+        background-color: $color-grey;
     }
 
     &--align-center {
@@ -117,7 +105,7 @@
         padding-top: 0;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding: 30px 20px;
 
         &--reservez {

@@ -1,0 +1,36 @@
+@mixin background-linear-gradient {
+    background: $color-primary;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+}
+
+@mixin box-shadow {
+    box-shadow: 0 0 15px $color-grey-light;
+    transition: box-shadow 400ms;
+}
+
+@mixin box-shadow-hover {
+    box-shadow: 0 0 20px $color-grey-dark;
+}
+
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop-max-width {
+    @media screen and (min-width: $desktop-breakpoint) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}

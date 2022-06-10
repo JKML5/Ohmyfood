@@ -1,18 +1,19 @@
 .card {
-    background-color: $background-color-primary;
-    box-shadow: 0 0 15px $shadow-color;
+    background-color: $color-white;
+    @include box-shadow;
     border-radius: 15px;
     margin-bottom: 20px;
-    transition: box-shadow 400ms;
-
 
     &:hover {
-        box-shadow: 0 0 20px $shadow-color-hover;
+        @include box-shadow-hover;
     }
 
-    a {
-        text-decoration: none;
-        color: $color-primary;
+    &--grey {
+        background-color: $color-grey;
+    }
+
+    &--relative {
+        position: relative;
     }
 
     &__thumbnail {
@@ -29,38 +30,29 @@
         align-items: center;
         padding: 15px;
 
-        h2 {
-            font-weight: 700;
+        &__title {
+            font-weight: $font-weight-bold;
             margin-bottom: 5px;
         }
 
-        p {
-            font-weight: 300;
+        &__subtitle {
+            font-weight: $font-weight-light;
         }
     }
 
     &__icon {
-        font-size: 24px;
+        font-size: $font-size-heart-icon;
 
         &--like {
-            color: $color-secondary;
-            text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+            color: $color-white;
+            text-shadow: -2px 0 $color-black, 0 2px $color-black, 2px 0 $color-black, 0 -2px $color-black;
             transition: all 200ms; 
             &:hover {
                 text-shadow: unset;
-                background: linear-gradient(to bottom right, $background-color-button-secondary, $background-color-tertiary);
+                @include background-linear-gradient;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
-
-    }
-
-    &--grey {
-        background-color: $background-color-secondary;
-    }
-
-    &--relative {
-        position: relative;
     }
 }

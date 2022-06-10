@@ -1,15 +1,12 @@
 .footer {
-    background-color: $background-color-footer;
+    background-color: $color-footer;
     padding: 30px 25px;
     
     &__content {
         font-size: $font-size-secondary;
-        font-weight: 300;
+        font-weight: $font-weight-light;
 
-        @media screen and (min-width: 992px) {
-            max-width: 1024px;
-            margin: 0 auto;
-        }
+        @include desktop-max-width;
     }
 
     &__logo {
@@ -19,7 +16,7 @@
             -webkit-filter: invert(100%);
             margin-bottom: 10px;
 
-            @media screen and (min-width: 768px) {
+            @include tablet {
                 width: auto;
                 max-height: 50px;
             }   
@@ -27,7 +24,7 @@
     }
 
     a {
-        color: $color-secondary;
+        color: $color-white;
     }
 
     a:hover {
@@ -36,7 +33,7 @@
 
     &__icon {
         margin-right: 5px;
-        font-size: 14px;
+        font-size: $font-size-tertiary;
     }
 
     &__li {

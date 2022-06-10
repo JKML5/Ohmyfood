@@ -1,8 +1,7 @@
 .loading-spinner {
     width: 100%;
     height: 100%;
-    background: $background-color-tertiary;
-    background: linear-gradient(to bottom right, $background-color-button-secondary, $background-color-tertiary);
+    @include background-linear-gradient;
     position: absolute;
     top:0;
     left:0;
@@ -19,9 +18,8 @@
 
     &__icon {
         margin-top: 50px;
-        font-size: 30px;
+        font-size: $font-size-spinner;
         animation: spin 1000ms infinite;
-
     }
 }
 
