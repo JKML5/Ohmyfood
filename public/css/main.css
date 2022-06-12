@@ -363,11 +363,12 @@ a.url-block {
   color: white;
   position: absolute;
   right: -60px;
-  transition: transform 330ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 
 .restaurant .card__check__icon {
   font-size: 22px;
+  transition: transform 500ms ease-in-out;
 }
 
 .restaurant .card:hover > .card__check {
@@ -376,6 +377,10 @@ a.url-block {
 
 .restaurant .card:hover > .card__content {
   width: calc(100% - 60px);
+}
+
+.restaurant .card:hover i {
+  transform: rotate(-360deg);
 }
 
 @media screen and (min-width: 768px) {
