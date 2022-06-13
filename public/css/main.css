@@ -331,6 +331,11 @@ a.url-block {
   padding: 15px 10px;
   width: 100%;
   white-space: nowrap;
+  transition: width 500ms ease-in-out;
+}
+
+.restaurant .card__content div {
+  overflow: hidden;
 }
 
 .restaurant .card__heading {

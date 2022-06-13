@@ -109,6 +109,11 @@
             padding: 15px 10px;
             width: 100%;
             white-space: nowrap;
+            transition: width 500ms ease-in-out;
+
+            div {
+                overflow: hidden;
+            }
         }
         
         &__heading {
