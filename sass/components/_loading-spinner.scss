@@ -16,6 +16,10 @@
     animation-iteration-count: 1;
     animation-delay: 3s;
 
+    &__logo {
+        max-width: 90%;
+    }
+
     &__icon {
         margin-top: 50px;
         font-size: $font-size-spinner;

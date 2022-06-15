@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Smartphones écrans larges */
 * {
   box-sizing: border-box;
   /* Opera/IE 8+ */
@@ -85,7 +87,7 @@ a.url-block {
 }
 
 .section {
-  padding: 50px 20px;
+  padding: 30px 20px;
   background-color: #FFFFFF;
   /* Home - Fonctionnement */
   /* Home - Restaurants */
@@ -198,6 +200,12 @@ a.url-block {
 
 .section--no-padding-top {
   padding-top: 0;
+}
+
+@media screen and (min-width: 375px) {
+  .section {
+    padding: 50px 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -412,7 +420,7 @@ a.url-block {
 }
 
 .footer__logo img {
-  width: 30%;
+  width: 40%;
   filter: invert(100%);
   -webkit-filter: invert(100%);
   margin-bottom: 10px;
@@ -465,9 +473,15 @@ a.url-block {
 .card__thumbnail {
   object-fit: cover;
   width: 100%;
-  height: 175px;
+  height: 130px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+}
+
+@media screen and (min-width: 375px) {
+  .card__thumbnail {
+    height: 175px;
+  }
 }
 
 .card__container {
@@ -553,6 +567,10 @@ a.url-block {
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
   animation-delay: 3s;
+}
+
+.loading-spinner__logo {
+  max-width: 90%;
 }
 
 .loading-spinner__icon {

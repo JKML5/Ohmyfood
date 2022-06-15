@@ -13,8 +13,16 @@
 }
 
 
+$mobile-breakpoint: 375px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 992px;
+
+/* Smartphones écrans larges */
+@mixin mobile {
+    @media screen and (min-width: $mobile-breakpoint) {
+        @content;
+    }
+}
 
 @mixin tablet {
     @media screen and (min-width: $tablet-breakpoint) {
