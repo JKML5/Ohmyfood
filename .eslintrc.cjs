@@ -49,6 +49,7 @@ export default [
         },
       ],
       'no-underscore-dangle': ['error', { allow: ['_id'] }],
+      '@typescript-eslint/no-var-requires': 0,
     },
   },
   pluginJs.configs.recommended,
