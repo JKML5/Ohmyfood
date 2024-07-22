@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -11,22 +12,22 @@ const Footer: React.FC = () => {
 
         <ul>
           <li className="footer__li">
-            <a href="#">
+            <Link to="#">
               <i className="footer__icon fa-solid fa-utensils"></i> Proposer un
               restaurant
-            </a>
+            </Link>
           </li>
           <li className="footer__li">
-            <a href="#">
+            <Link to="#">
               <i className="footer__icon fa-solid fa-handshake-angle"></i>
               Devenir partenaire
-            </a>
+            </Link>
           </li>
           <li className="footer__li">
-            <a href="#">Mentions légales</a>
+            <Link to="#">Mentions légales</Link>
           </li>
           <li className="footer__li">
-            <a href="mailto:contact@ohmyfood.com">Contact</a>
+            <Link to="mailto:contact@ohmyfood.com">Contact</Link>
           </li>
         </ul>
       </div>

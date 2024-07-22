@@ -20,9 +20,9 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
     <div className="card card--relative">
       {isNew && <span className="badge badge--new"> Nouveau </span>}
 
-      <a href={'/restaurant/' + id} className="url-block">
+      <Link to={'/restaurant/' + id} className="url-block">
         <img src={imgSrc} alt={'Photo ' + title} className="card__thumbnail" />
-      </a>
+      </Link>
 
       <div className="card__container">
         <div className="card__heading">
@@ -30,7 +30,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({
             <Link to={'/restaurant/' + id}>{title}</Link>
           </h2>
           <p className="card__container__subtitle">
-            <a href={'/restaurant/' + id}>{location}</a>
+            <Link to={'/restaurant/' + id}>{location}</Link>
           </p>
         </div>
         <i className="card__icon card__icon--like fa-solid fa-heart"></i>
